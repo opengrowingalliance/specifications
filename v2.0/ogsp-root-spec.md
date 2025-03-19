@@ -33,15 +33,17 @@ This root specification serves as the foundational document that ties together a
 
 ### 1.2 OGSP Vision
 
-The Open Growing System Protocol envisions a world where advanced plant cultivation technology is accessible to everyone, from commercial growers to hobbyists and researchers. By creating open standards for growing systems, OGSP aims to:
+The Open Growing System Protocol envisions a solarpunk future where advanced plant cultivation technology is accessible to everyone, from small-scale farmers to community growers, hobbyists, and researchers. By creating open standards for growing systems, OGSP aims to:
 
-- **Democratize Access**: Make advanced growing techniques available to growers of all skill levels and resource capabilities
-- **Enable Innovation**: Create a foundation for community-driven innovation in plant cultivation
-- **Break Down Silos**: Eliminate proprietary barriers that prevent interoperability between systems
-- **Foster Knowledge Sharing**: Create mechanisms for growers to share and improve cultivation methodologies
+- **Democratize Access**: Make advanced growing techniques available to growers of all skill levels and resource capabilities, particularly those historically excluded from technological advancement
+- **Enable Innovation**: Create a foundation for community-driven innovation in plant cultivation that serves ecological and social justice
+- **Break Down Silos**: Eliminate proprietary barriers that prevent interoperability between systems and concentrate power in large agribusinesses
+- **Foster Knowledge Sharing**: Create mechanisms for growers to share and improve cultivation methodologies, preserving and enhancing traditional and community knowledge
 - **Accelerate Advancement**: Speed the development of more efficient, sustainable growing practices through collaborative improvement
+- **Promote Economic Justice**: Empower small farmers with technology that helps them compete with large-scale industrial agriculture
+- **Support Sustainable Agriculture**: Prioritize ecological sustainability in all aspects of the protocol's development and implementation
 
-OGSP represents a fundamental shift from closed, proprietary growing systems to an open ecosystem where components can be mixed and matched, recipes can be shared and improved, and innovation can flourish through community collaboration.
+OGSP represents a fundamental shift from closed, proprietary growing systems to an open ecosystem where components can be mixed and matched, recipes can be shared and improved, and innovation can flourish through community collaboration. This shift is not merely technical but socioeconomic, aiming to redistribute power in agricultural systems and create more equitable and sustainable food and plant cultivation systems.
 
 ### 1.3 History and Evolution
 
@@ -95,7 +97,50 @@ The development and implementation of OGSP is guided by these core principles:
 - **Graceful Degradation**: Systems should function reasonably even when optimal conditions or components are unavailable
 - **Declarative Over Imperative**: Recipes describe what to achieve, not how to achieve it, allowing for implementation flexibility
 - **Community Governance**: The protocol evolves through community-driven processes with clear governance structures
-- **Inclusivity**: The protocol accommodates diverse needs, from hobbyists to commercial operations
+- **Inclusivity**: The protocol accommodates diverse needs, from small farmers to community growers to commercial operations
+- **Ecological Sustainability**: All aspects of the protocol prioritize environmental sustainability and regenerative practices
+- **Economic Justice**: The protocol actively works to counterbalance power inequalities in agricultural systems
+- **Appropriate Technology**: Solutions are designed to be appropriate to their context, not unnecessarily complex or resource-intensive
+
+### 2.4 Solarpunk Philosophy and Agricultural Justice
+
+OGSP embraces a solarpunk vision of the future—one where technology serves ecological sustainability, social justice, and community empowerment. This philosophical foundation shapes our approach in several key ways:
+
+#### 2.4.1 Technology for Agricultural Justice
+
+Current agricultural systems often concentrate power and resources in the hands of large agribusinesses, while small farmers struggle to compete despite often employing more sustainable practices. OGSP aims to rebalance this power dynamic by:
+
+- Providing small farmers with technological tools that were previously only available to large operations
+- Enabling resource-efficient growing that maximizes output while minimizing environmental impact
+- Creating standards that prioritize interoperability and affordability over vendor lock-in
+- Supporting community-based knowledge sharing that preserves and enhances traditional growing wisdom
+
+#### 2.4.2 Community Empowerment Through Open Technology
+
+Specialized growing communities, such as cannabis cultivators, have developed sophisticated knowledge outside traditional agricultural institutions. OGSP recognizes the value of this knowledge and aims to:
+
+- Provide platforms for documenting and sharing community-developed growing techniques
+- Enable standardization without centralization, allowing diverse approaches to thrive
+- Support communities in refining their practices through data collection and analysis
+- Create bridges between traditional agricultural knowledge and emerging growing communities
+
+#### 2.4.3 Ecological Integration
+
+True sustainability requires growing systems that work with rather than against natural processes. OGSP promotes:
+
+- Energy-efficient growing techniques that minimize resource consumption
+- Integration with renewable energy systems
+- Closed-loop approaches that minimize waste and external inputs
+- Biodiversity-supporting growing methods that enhance rather than deplete ecosystems
+
+#### 2.4.4 Decentralization and Resilience
+
+Centralized agricultural systems are vulnerable to disruption and control. OGSP supports:
+
+- Distributed growing systems that enhance food sovereignty and community resilience
+- Local adaptation of growing techniques to specific environmental conditions
+- Resilient systems that can operate with minimal external dependencies
+- Knowledge commons that cannot be enclosed or privatized
 
 ## 3. Community-Driven Approach
 
@@ -144,14 +189,18 @@ These knowledge sharing mechanisms are designed to accelerate innovation and imp
 
 OGSP is committed to democratizing access to advanced growing technology through:
 
-- **Accessibility Considerations**: Ensuring specifications can be implemented at various resource levels
-- **Tiered Implementation Levels**: Defining implementation levels from basic to advanced
-- **Educational Outreach**: Programs to build capacity in underserved communities
-- **Open Source Tools**: Free and open source tools for implementation and testing
-- **Multilingual Resources**: Documentation and resources in multiple languages
-- **Appropriate Technology Approaches**: Adaptations for diverse environmental and resource contexts
+- **Accessibility Considerations**: Ensuring specifications can be implemented at various resource levels, with particular attention to the needs of small farmers and community growers
+- **Tiered Implementation Levels**: Defining implementation levels from basic to advanced, with valuable functionality available even at the most basic level
+- **Educational Outreach**: Programs to build capacity in underserved communities, including partnerships with agricultural extension services and community organizations
+- **Open Source Tools**: Free and open source tools for implementation and testing, with emphasis on tools that run on affordable, widely available hardware
+- **Multilingual Resources**: Documentation and resources in multiple languages, prioritizing languages spoken in regions with high concentrations of small-scale agriculture
+- **Appropriate Technology Approaches**: Adaptations for diverse environmental and resource contexts, ensuring solutions are appropriate to local conditions
+- **Low-Cost Reference Implementations**: Developing and documenting implementations that can be built with minimal investment
+- **Community Support Networks**: Facilitating peer-to-peer support systems where experienced users can help newcomers
+- **Technology Transfer Programs**: Structured programs to bring OGSP technology to small farming communities
+- **Participatory Design**: Including small farmers and community growers in the design process to ensure solutions meet their actual needs
 
-The democratization strategy ensures that OGSP benefits are accessible to diverse communities worldwide, not just well-resourced commercial operations.
+The democratization strategy ensures that OGSP benefits are accessible to diverse communities worldwide, not just well-resourced commercial operations. It recognizes that technical accessibility must be paired with economic accessibility and community support to achieve true democratization.
 
 ## 4. Ecosystem Vision
 
@@ -173,6 +222,10 @@ Each stakeholder group both contributes to and benefits from the OGSP ecosystem,
 
 OGSP supports a wide range of use cases across different contexts:
 
+- **Small-Scale Sustainable Farming**: Enabling small farmers to optimize yields while minimizing resource use, helping them compete with large agribusiness through precision growing techniques
+- **Community-Based Agriculture**: Supporting farmer cooperatives and community-supported agriculture with shared technology resources and knowledge
+- **Specialized Plant Communities**: Empowering communities like cannabis growers to document, share, and improve cultivation techniques while maintaining their independence
+- **Indigenous and Traditional Agriculture**: Preserving and enhancing traditional growing knowledge through appropriate technology integration
 - **Commercial Agriculture**: Large-scale food production with optimized resource use
 - **Urban Farming**: Space-efficient growing in urban environments
 - **Research Applications**: Controlled experiments and phenotyping
@@ -181,8 +234,10 @@ OGSP supports a wide range of use cases across different contexts:
 - **Community Gardens**: Shared growing spaces with collaborative management
 - **Therapeutic Horticulture**: Growing for mental health and rehabilitation
 - **Extreme Environment Cultivation**: Growing in challenging environments (space, desert, etc.)
+- **Food Sovereignty Initiatives**: Supporting communities in developing self-sufficient food systems
+- **Agroecological Systems**: Integrating ecological principles into agricultural production
 
-These diverse use cases inform the protocol's requirements and ensure its broad applicability.
+These diverse use cases inform the protocol's requirements and ensure its broad applicability, with particular attention to use cases that promote sustainability, community empowerment, and economic justice.
 
 ### 4.3 Success Metrics
 
