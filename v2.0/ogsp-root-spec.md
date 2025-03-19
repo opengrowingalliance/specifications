@@ -363,11 +363,11 @@ These mechanisms ensure that OGSP can continue to evolve and serve its community
 
 Those looking to implement OGSP can start with:
 
-- **Quick Start Guide**: https://opengrowingtrust.org/quickstart
-- **Reference Implementation**: https://github.com/opengrowingtrust/reference-ogsp
-- **Development Tools**: https://opengrowingtrust.org/tools
+- **Quick Start Guide**: https://github.com/opengrowingalliance
+- **Reference Implementation**: https://github.com/opengrowingalliance/reference
+- **Development Tools**: https://github.com/opengrowingalliance/tools
 - **Implementation Examples**: https://opengrowingtrust.org/examples
-- **Community Support**: https://forum.opengrowingtrust.org
+- **Community Support**: https://github.com/orgs/opengrowingalliance/discussions
 
 The implementation process typically follows these steps:
 1. Determine implementation scope and capability level
@@ -381,11 +381,11 @@ The implementation process typically follows these steps:
 
 Those wishing to contribute to OGSP can:
 
-- **Join the Community**: https://opengrowingtrust.org/join
-- **Find Contribution Opportunities**: https://opengrowingtrust.org/contribute
-- **Access Development Resources**: https://github.com/opengrowingtrust/development
-- **Participate in Working Groups**: https://opengrowingtrust.org/workinggroups
-- **Attend Community Events**: https://opengrowingtrust.org/events
+- **Join the Community**: https://github.com/orgs/opengrowingalliance/discussions
+- **Find Contribution Opportunities**: https://opengrowingalliance.solar/contribute
+- **Access Development Resources**: https://github.com/opengrowingalliance
+- **Participate in Working Groups**: https://opengrowingalliance.solar/workinggroups
+- **Attend Community Events**: https://opengrowingalliance.solar/events
 
 New contributors are encouraged to start with documentation, testing, or small enhancements before moving to more complex contributions.
 
@@ -393,11 +393,11 @@ New contributors are encouraged to start with documentation, testing, or small e
 
 End users of OGSP-compatible systems can:
 
-- **Find Compatible Systems**: https://opengrowingtrust.org/compatible
-- **Access Recipe Repositories**: https://opengrowingtrust.org/recipes
-- **Join User Communities**: https://forum.opengrowingtrust.org/users
-- **Report Issues**: https://opengrowingtrust.org/issues
-- **Request Features**: https://opengrowingtrust.org/features
+- **Find Compatible Systems**: https://opengrowingalliance.solar/compatible
+- **Access Recipe Repositories**: https://opengrowingalliance.solar/recipes
+- **Join User Communities**: https://opengrowingalliance.solar/communities
+- **Report Issues**: https://github.com/opengrowingalliance
+- **Request Features**: https://github.com/orgs/opengrowingalliance/discussions
 
 Users are a vital part of the OGSP ecosystem, providing feedback, sharing experiences, and helping to drive the protocol's evolution.
 
