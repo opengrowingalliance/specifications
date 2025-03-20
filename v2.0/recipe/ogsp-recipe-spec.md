@@ -1,21 +1,21 @@
-# OGSP Recipe Representation Specification (v2.1)
+# OGP Recipe Representation Specification (v2.1)
 
-*This document is part of the OGSP 2.0 specification suite. For the overarching vision, motivation, and community-driven approach, please refer to the [Root Specification](../ogsp-root-spec.md).*
+*This document is part of the OGP 2.0 specification suite. For the overarching vision, motivation, and community-driven approach, please refer to the [Root Specification](../ogp-root-spec.md).*
 
 ## Introduction
-This document specifies the format and structure for representing growing recipes within the OGSP protocol. It aims to provide a standardized approach for defining, sharing, and executing recipes across diverse hardware and software environments.
+This document specifies the format and structure for representing growing recipes within the OGP protocol. It aims to provide a standardized approach for defining, sharing, and executing recipes across diverse hardware and software environments.
 
-The OGSP Recipe Specification has been enhanced to support a comprehensive entity model and automation framework, enabling sophisticated interactions between sensors, actuators, and virtual entities, as well as complex automation workflows triggered by events.
+The OGP Recipe Specification has been enhanced to support a comprehensive entity model and automation framework, enabling sophisticated interactions between sensors, actuators, and virtual entities, as well as complex automation workflows triggered by events.
 
 ## Versioning
 - Current Version: 2.1.0
 
 ## References
-- [Root Specification](../ogsp-root-spec.md)
-- [Core Protocol Specification](../core/ogsp-core-spec.md)
-- [Hardware Abstraction Specification](../hardware/ogsp-hardware-spec.md)
-- [AI Integration Specification](../ai/ogsp-ai-spec.md)
-- [Security Specification](../security/ogsp-security-spec.md)
+- [Root Specification](../ogp-root-spec.md)
+- [Core Protocol Specification](../core/ogp-core-spec.md)
+- [Hardware Abstraction Specification](../hardware/ogp-hardware-spec.md)
+- [AI Integration Specification](../ai/ogp-ai-spec.md)
+- [Security Specification](../security-spec.md)
 
 ## Core Concepts
 
@@ -244,7 +244,7 @@ Actions that control actuators:
   "target": "hvac-1",
   "command": "set-temperature",
   "parameters": {
-    "temperature": "{{current_temperature - 3}}",
+    "temperature": "{{current_temperature - 2}}",
     "mode": "cooling"
   },
   "constraints": {
@@ -328,11 +328,11 @@ Workflows define complex sequences of actions with dependencies:
 {
   "id": "phase-transition-workflow",
   "description": "Transition from vegetative to flowering phase",
-  "trigger": "phase-transition",
+  "trigger": "veg-to-flower",
   "steps": [
     {
       "id": "step-1",
-      "action": "transition-light-schedule",
+      "action": "set-light-schedule-flower",
       "waitFor": "complete"
     },
     {
@@ -401,7 +401,7 @@ Validation failures MUST be reported with clear error messages indicating:
 
 ## GitHub Repository Structure
 
-To support the open source philosophy and enable effective sharing and collaboration, OGSP recipes should be organized in GitHub repositories following a standardized structure:
+To support the open source philosophy and enable effective sharing and collaboration, OGP recipes should be organized in GitHub repositories following a standardized structure:
 
 ```
 recipe-repository/
@@ -467,7 +467,7 @@ The following example demonstrates a recipe for growing cannabis with automated 
           "actions": ["read", "write", "execute", "fork"]
         },
         {
-          "entity": "group:OGSP-Community",
+          "entity": "group:OGP-Community",
           "actions": ["read", "fork"]
         }
       ]
@@ -733,7 +733,7 @@ The following example demonstrates a recipe for growing cannabis with automated 
         "source": "recipe-engine",
         "fromState": "vegetative",
         "toState": "flowering",
-        "description": "Transition from vegetative to flowering phase"
+        "description": "Plants entering flowering phase"
       }
     ],
     "compoundEvents": [
@@ -822,89 +822,6 @@ The following example demonstrates a recipe for growing cannabis with automated 
       }
     ]
   },
-  "automationRules": [
-    {
-      "id": "high-temp-response",
-      "description": "Respond to high temperature conditions",
-      "trigger": "high-temp-alert",
-      "conditions": [],
-      "actions": [
-        {
-          "action": "cool-room",
-          "order": 1
-        },
-        {
-          "action": "alert-environmental-issue",
-          "order": 2
-        }
-      ],
-      "cooldown": "15m"
-    },
-    {
-      "id": "low-humidity-response",
-      "description": "Respond to low humidity conditions",
-      "trigger": "low-humidity-alert",
-      "conditions": [],
-      "actions": [
-        {
-          "action": "increase-humidity",
-          "order": 1
-        },
-        {
-          "action": "alert-environmental-issue",
-          "order": 2
-        }
-      ],
-      "cooldown": "15m"
-    },
-    {
-      "id": "vpd-optimization",
-      "description": "Optimize vapor pressure deficit",
-      "trigger": "vpd-out-of-range",
-      "conditions": [],
-      "actions": [
-        {
-          "action": "optimize-vpd",
-          "order": 1
-        }
-      ],
-      "cooldown": "1h"
-    }
-  ],
-  "workflows": [
-    {
-      "id": "veg-to-flower-transition",
-      "description": "Transition from vegetative to flowering phase",
-      "trigger": "veg-to-flower",
-      "steps": [
-        {
-          "id": "step-1",
-          "action": "set-light-schedule-flower",
-          "waitFor": "complete"
-        },
-        {
-          "id": "step-2",
-          "action": "optimize-vpd",
-          "parameters": {
-            "targetVPD": 0.9
-          },
-          "waitFor": "2d"
-        },
-        {
-          "id": "step-3",
-          "action": "notify-phase-change",
-          "waitFor": "complete"
-        }
-      ],
-      "errorHandling": {
-        "onFailure": "alert-environmental-issue",
-        "retryStrategy": {
-          "maxAttempts": 3,
-          "backoff": "exponential"
-        }
-      }
-    }
-  ],
   "hardware": {
     "capabilities": [
       {
@@ -948,3 +865,59 @@ The following example demonstrates a recipe for growing cannabis with automated 
 ```
 
 This example demonstrates how the enhanced recipe protocol can represent a comprehensive growing system with sensors, actuators, virtual entities, and automation workflows.
+
+</final_file_content>
+
+IMPORTANT: For any future changes to this file, use the final_file_content shown above as your reference. This content reflects the current state of the file, including any auto-formatting (e.g., if you used single quotes but the formatter converted them to double quotes). Always base your SEARCH/REPLACE operations on this final version to ensure accuracy.
+
+<environment_details>
+# VSCode Visible Files
+specifications/v2.0/recipe/ogsp-recipe-spec.md
+
+# VSCode Open Tabs
+schemas/device.schema.json
+schemas/recipe.schema.json
+specifications/v1.0/ogsp-spec.md
+specifications/v1.0/README.md
+specifications/v1.1/appendices.md
+specifications/v1.1/ogsp-spec.md
+specifications/v2.0/core/ogsp-core-spec.md
+specifications/v2.0/recipe/ogsp-recipe-spec-revised.md
+specifications/v2.0/recipe/ogsp-recipe-spec.md
+specifications/v2.0/hardware/ogp-hardware-spec.md
+specifications/v2.0/ogsp-root-spec.md
+
+# Current Time
+3/20/2025, 12:27:01 AM (America/Sao_Paulo, UTC-3:00)
+
+# Current Mode
+ACT MODE
+</environment_details>
+
+</final_file_content>
+
+IMPORTANT: For any future changes to this file, use the final_file_content shown above as your reference. This content reflects the current state of the file, including any auto-formatting (e.g., if you used single quotes but the formatter converted them to double quotes). Always base your SEARCH/REPLACE operations on this final version to ensure accuracy.
+
+<environment_details>
+# VSCode Visible Files
+specifications/v2.0/recipe/ogsp-recipe-spec.md
+
+# VSCode Open Tabs
+schemas/device.schema.json
+schemas/recipe.schema.json
+specifications/v1.0/ogsp-spec.md
+specifications/v1.0/README.md
+specifications/v1.1/appendices.md
+specifications/v1.1/ogsp-spec.md
+specifications/v2.0/core/ogsp-core-spec.md
+specifications/v2.0/recipe/ogsp-recipe-spec-revised.md
+specifications/v2.0/recipe/ogsp-recipe-spec.md
+specifications/v2.0/hardware/ogp-hardware-spec.md
+specifications/v2.0/ogsp-root-spec.md
+
+# Current Time
+3/20/2025, 12:27:19 AM (America/Sao_Paulo, UTC-3:00)
+
+# Current Mode
+ACT MODE
+</environment_details>

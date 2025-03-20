@@ -1,22 +1,22 @@
-# OGSP Recipe Representation Specification (v2.2)
+# OGP Recipe Representation Specification (v2.2)
 
-*This document is part of the OGSP 2.0 specification suite. For the overarching vision, motivation, and community-driven approach, please refer to the [Root Specification](../ogsp-root-spec.md).*
+*This document is part of the OGP 2.0 specification suite. For the overarching vision, motivation, and community-driven approach, please refer to the [Root Specification](../ogp-root-spec.md).*
 
 ## Introduction
-This document specifies the format and structure for representing growing recipes within the OGSP protocol. It aims to provide a standardized approach for defining, sharing, and executing recipes across diverse hardware and software environments.
+This document specifies the format and structure for representing growing recipes within the OGP protocol. It aims to provide a standardized approach for defining, sharing, and executing recipes across diverse hardware and software environments.
 
-The OGSP Recipe Specification has been enhanced to emphasize a declarative approach to recipe definition, focusing on plant needs rather than implementation details. This revision strengthens the separation between "what" a plant needs and "how" a system implements those needs, making recipes more portable and adaptable across different growing systems.
+The OGP Recipe Specification has been enhanced to emphasize a declarative approach to recipe definition, focusing on plant needs rather than implementation details. This revision strengthens the separation between "what" a plant needs and "how" a system implements those needs, making recipes more portable and adaptable across different growing systems.
 
 ## Versioning
 - Current Version: 2.2.0
 - Previous Version: 2.1.0
 
 ## References
-- [Root Specification](../ogsp-root-spec.md)
-- [Core Protocol Specification](../core/ogsp-core-spec.md)
-- [Hardware Abstraction Specification](../hardware/ogsp-hardware-spec.md)
-- [AI Integration Specification](../ai/ogsp-ai-spec.md)
-- [Security Specification](../security/ogsp-security-spec.md)
+- [Root Specification](../ogp-root-spec.md)
+- [Core Protocol Specification](../core/ogp-core-spec.md)
+- [Hardware Abstraction Specification](../hardware/ogp-hardware-spec.md)
+- [AI Integration Specification](../ai/ogp-ai-spec.md)
+- [Security Specification](../security/security-spec.md)
 
 ## Core Concepts
 
@@ -179,6 +179,7 @@ commonIssues:
     symptoms: ["yellowing of older leaves", "stunted growth"]
     causes: ["insufficient nitrogen", "pH imbalance", "root problems"]
     preventions: ["proper nutrient solution", "regular pH monitoring", "healthy root zone"]
+    corrections: ["increase nitrogen in nutrient solution", "check and adjust pH", "examine roots for health issues"]
 ```
 
 ### Phase Types
@@ -394,7 +395,7 @@ transitions:
         transitionPeriod:
           value: 7
           unit: "days"
-    biologicalContext: "Reducing light hours triggers hormonal changes that shift the plant from vegetative growth to flowering"
+    biologicalContext: "Reducing light hours triggers flowering"
 ```
 
 ## Implementation Guidance
@@ -479,7 +480,7 @@ Validation failures MUST be reported with clear error messages indicating:
 
 ## GitHub Repository Structure
 
-To support the open source philosophy and enable effective sharing and collaboration, OGSP recipes should be organized in GitHub repositories following a standardized structure:
+To support the open source philosophy and enable effective sharing and collaboration, OGP recipes should be organized in GitHub repositories following a standardized structure:
 
 ```
 recipe-repository/
@@ -623,6 +624,16 @@ transitions:
           from: 18
           to: 12
           unit: "hours"
+        spectrum:
+          from: "blue-dominant"
+          to: "red-dominant"
+        transitionPeriod:
+          value: 7
+          unit: "days"
+      nutrition:
+        profile:
+          from: "nitrogen-dominant"
+          to: "phosphorus-dominant"
         transitionPeriod:
           value: 7
           unit: "days"
@@ -636,7 +647,7 @@ implementationGuidance:
 
 ## Conclusion
 
-The revised OGSP Recipe Specification emphasizes a declarative approach to recipe definition, focusing on plant needs rather than implementation details. This approach makes recipes more portable across different growing systems and provides clearer guidance for growers.
+The revised OGP Recipe Specification emphasizes a declarative approach to recipe definition, focusing on plant needs rather than implementation details. This approach makes recipes more portable across different growing systems and provides clearer guidance for growers.
 
 By separating the "what" (plant needs) from the "how" (system implementation), the specification enables:
 
@@ -646,4 +657,4 @@ By separating the "what" (plant needs) from the "how" (system implementation), t
 4. **Better Educational Value**: Recipes provide biological context that helps growers understand plant needs
 5. **Simplified Implementation**: Growing systems can interpret recipes according to their specific capabilities
 
-This revision aligns with the OGSP's guiding principle of "Declarative Over Imperative" and supports the democratization of advanced growing techniques by making recipes more accessible and adaptable.
+This revision aligns with the OGP's guiding principle of "Declarative Over Imperative" and supports the democratization of advanced growing techniques by making recipes more accessible and adaptable.

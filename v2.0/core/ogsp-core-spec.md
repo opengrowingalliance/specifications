@@ -1,6 +1,6 @@
-# OGSP Core Specification (v2.0)
+# OGP Core Specification (v2.0)
 
-*This document is part of the OGSP 2.0 specification suite. For the overarching vision, motivation, and community-driven approach, please refer to the [Root Specification](../ogsp-root-spec.md).*
+*This document is part of the OGP 2.0 specification suite. For the overarching vision, motivation, and community-driven approach, please refer to the [Root Specification](../ogp-root-spec.md).*
 
 **Version:** 2.0.0  
 **Date:** March 19, 2025  
@@ -11,26 +11,26 @@
 
 ### 1.1 Purpose and Scope
 
-This Core Specification defines the technical architecture and implementation requirements of the Open Growing System Protocol (OGSP). It serves as the technical foundation that unifies all domain-specific specifications and provides a comprehensive framework for implementing interoperable growing systems.
+This Core Specification defines the technical architecture and implementation requirements of the Open Growing Protocol (OGP). It serves as the technical foundation that unifies all domain-specific specifications and provides a comprehensive framework for implementing interoperable growing systems.
 
 The scope of this document includes:
-- Defining the core technical architecture of OGSP-compliant systems
+- Defining the core technical architecture of OGP-compliant systems
 - Establishing the technical relationships between all domain specifications
 - Providing detailed technical guidance for implementers
-- Specifying the minimum requirements for OGSP compliance
+- Specifying the minimum requirements for OGP compliance
 - Outlining the extension mechanisms for future capabilities
 
-This specification is intended for hardware manufacturers, software developers, system integrators, and other technical stakeholders implementing OGSP-compliant systems.
+This specification is intended for hardware manufacturers, software developers, system integrators, and other technical stakeholders implementing OGP-compliant systems.
 
 ### 1.2 Key Concepts
 
-The OGSP is built on several fundamental concepts that enable interoperability, extensibility, and security across implementations:
+The OGP is built on several fundamental concepts that enable interoperability, extensibility, and security across implementations:
 
-**Interoperability**: The ability for components from different manufacturers to work together seamlessly. This is achieved through standardized interfaces, data formats, and communication protocols. Interoperability is the cornerstone of the OGSP, enabling recipe portability and component substitutability.
+**Interoperability**: The ability for components from different manufacturers to work together seamlessly. This is achieved through standardized interfaces, data formats, and communication protocols. Interoperability is the cornerstone of the OGP, enabling recipe portability and component substitutability.
 
-**Extensibility**: The capacity for the protocol to accommodate new capabilities, technologies, and use cases without breaking existing implementations. Extensibility is built into the OGSP through modular design, versioned interfaces, and explicit extension points.
+**Extensibility**: The capacity for the protocol to accommodate new capabilities, technologies, and use cases without breaking existing implementations. Extensibility is built into the OGP through modular design, versioned interfaces, and explicit extension points.
 
-**Security by Design**: Security is integrated into every aspect of the OGSP, not added as an afterthought. This includes authentication, authorization, data protection, and secure communication channels. The security model is designed to protect both the growing system and the data it generates.
+**Security by Design**: Security is integrated into every aspect of the OGP, not added as an afterthought. This includes authentication, authorization, data protection, and secure communication channels. The security model is designed to protect both the growing system and the data it generates.
 
 **Progressive Enhancement**: Basic functionality works everywhere, with enhanced capabilities available where supported. This allows for implementations at various resource levels while maintaining compatibility.
 
@@ -44,11 +44,18 @@ The relationship between the Core Specification and domain specifications is ill
 
 ```mermaid
 graph TD
-    Core[Core Specification] --> Recipe[Recipe Specification]
-    Core --> Hardware[Hardware Specification]
-    Core --> Comm[Communication Specification]
-    Core --> AI[AI Integration Specification]
-    Core --> Security[Security Specification]
+    Root[Root Specification] --> Core[Core Specification]
+    Root --> Recipe[Recipe Specification]
+    Root --> Hardware[Hardware Specification]
+    Root --> Comm[Communication Specification]
+    Root --> AI[AI Integration Specification]
+    Root --> Security[Security Specification]
+    
+    Core --> Recipe
+    Core --> Hardware
+    Core --> Comm
+    Core --> AI
+    Core --> Security
     
     Recipe --> Hardware
     Recipe --> AI
@@ -61,7 +68,7 @@ graph TD
     Comm --> Security
 ```
 
-Each domain specification builds upon the Core Specification and may have dependencies on other domain specifications:
+Each specification has clear dependencies and relationships with others, creating a cohesive whole while maintaining modularity.
 
 - **Recipe Specification**: Defines the format and structure for growing recipes, depending on hardware capabilities and potentially AI features.
 - **Hardware Specification**: Details the hardware abstraction layer, relying on communication protocols and security measures.
@@ -73,7 +80,7 @@ Implementers must adhere to both the Core Specification and the relevant domain 
 
 ### 1.4 Versioning and Compatibility
 
-The OGSP follows semantic versioning (MAJOR.MINOR.PATCH) with the following guidelines:
+The OGP follows semantic versioning (MAJOR.MINOR.PATCH) with the following guidelines:
 
 - **MAJOR** version changes indicate incompatible API changes
 - **MINOR** version changes add functionality in a backward-compatible manner
@@ -102,7 +109,7 @@ This versioning strategy ensures that implementations can evolve while maintaini
 
 ### 2.1 System Components
 
-The OGSP architecture consists of several core components that work together to create a complete growing system:
+The OGP architecture consists of several core components that work together to create a complete growing system:
 
 **Controller**: The central orchestration component that manages the overall system operation. The controller:
 - Interprets and executes recipes
@@ -118,7 +125,7 @@ The OGSP architecture consists of several core components that work together to 
 - External data sources (weather forecasts, etc.)
 
 **Actuator Subsystem**: Modifies the growing environment based on controller commands. This includes:
-- Environmental control (HVAC, lighting, irrigation, etc.)
+- Environmental control (HVAC, lighting, CO2, etc.)
 - Nutrient delivery systems
 - Mechanical systems (pruning, harvesting, etc.)
 - Notification systems (alerts, warnings, etc.)
@@ -180,7 +187,7 @@ graph TD
 
 ### 2.2 Data Flow Diagram
 
-The OGSP data flow illustrates how information moves through the system:
+The OGP data flow illustrates how information moves through the system:
 
 ```mermaid
 graph LR
@@ -283,7 +290,7 @@ Key control flows include:
 
 ### 2.4 Security Model
 
-The OGSP security model follows a defense-in-depth approach, implementing security at multiple layers:
+The OGP security model follows a defense-in-depth approach, implementing security at multiple layers:
 
 **Authentication and Identity Management**:
 - All system access requires authentication
@@ -298,7 +305,7 @@ The OGSP security model follows a defense-in-depth approach, implementing securi
 - Separation of duties for critical operations
 
 **Data Protection**:
-- Encryption for data at rest and in transit
+- Encryption of sensitive data at rest and in transit
 - Data integrity verification
 - Secure key management
 - Data minimization and privacy controls
@@ -327,7 +334,7 @@ The security model is implemented across all system components and interfaces, w
 
 ### 3.1 AI Integration
 
-The OGSP Core Specification defines the foundational requirements for AI integration, with detailed implementation guidance provided in the AI Integration Specification.
+The OGP Core Specification defines the foundational requirements for AI integration, with detailed implementation guidance provided in the AI Integration Specification.
 
 **AI Capability Categories**:
 
@@ -392,7 +399,7 @@ The AI Integration Specification provides detailed implementation guidance for t
 
 ### 3.2 Communication Protocols
 
-The OGSP Core Specification defines the foundational requirements for communication protocols, with detailed implementation guidance provided in the Communication Protocol Specification.
+The OGP Core Specification defines the foundational requirements for communication protocols, with detailed implementation guidance provided in the Communication Protocol Specification.
 
 **Communication Domains**:
 
@@ -447,7 +454,7 @@ The Communication Protocol Specification provides detailed implementation guidan
 
 ### 3.3 Hardware Requirements
 
-The OGSP Core Specification defines the foundational requirements for hardware integration, with detailed implementation guidance provided in the Hardware Abstraction Specification.
+The OGP Core Specification defines the foundational requirements for hardware integration, with detailed implementation guidance provided in the Hardware Abstraction Specification.
 
 **Hardware Categories**:
 
@@ -512,7 +519,7 @@ The Hardware Abstraction Specification provides detailed implementation guidance
 
 ### 3.4 Recipe Representation
 
-The OGSP Core Specification defines the foundational requirements for recipe representation, with detailed implementation guidance provided in the Recipe Representation Specification.
+The OGP Core Specification defines the foundational requirements for recipe representation, with detailed implementation guidance provided in the Recipe Representation Specification.
 
 **Recipe Components**:
 
@@ -565,7 +572,7 @@ The OGSP Core Specification defines the foundational requirements for recipe rep
    - JSON (preferred for machine processing)
    - XML (for legacy system compatibility)
 
-2. **Schema Validation**: Recipes MUST validate against the OGSP Recipe Schema, which:
+2. **Schema Validation**: Recipes MUST validate against the OGP Recipe Schema, which:
    - Defines the structure and data types
    - Enforces required fields and relationships
    - Validates value ranges and constraints
@@ -573,7 +580,7 @@ The OGSP Core Specification defines the foundational requirements for recipe rep
 
 3. **Versioning**: Recipes MUST implement semantic versioning and include:
    - Recipe version (MAJOR.MINOR.PATCH)
-   - Minimum OGSP version required
+   - Minimum OGP version required
    - Hardware capability requirements
    - Backward compatibility information
 
@@ -593,7 +600,7 @@ The Recipe Representation Specification provides detailed implementation guidanc
 
 ### 3.5 Security Framework
 
-The OGSP Core Specification defines the foundational requirements for security, with detailed implementation guidance provided in the Security Specification.
+The OGP Core Specification defines the foundational requirements for security, with detailed implementation guidance provided in the Security Specification.
 
 **Security Domains**:
 
@@ -659,10 +666,10 @@ The Security Specification provides detailed implementation guidance for these r
 
 ### 4.1 Reference Implementations
 
-The OGSP provides reference implementations to demonstrate the protocol in action and provide implementation guidance:
+The OGP provides reference implementations to demonstrate the protocol in action and provide implementation guidance:
 
 **Core Reference Implementation**:
-- GitHub Repository: https://github.com/opengrowingtrust/reference-ogsp
+- GitHub Repository: https://github.com/opengrowingalliance/reference-ogp
 - Documentation: https://docs.opengrowingtrust.org/reference-implementation
 - License: Apache 2.0
 
@@ -693,7 +700,7 @@ Implementers are encouraged to:
 
 ### 4.2 Compliance Requirements
 
-To be considered OGSP-compliant, implementations must meet the following requirements:
+To be considered OGP-compliant, implementations must meet the following requirements:
 
 **Core Compliance**:
 1. Implement all MUST requirements in the Core Specification
@@ -716,24 +723,24 @@ To be considered OGSP-compliant, implementations must meet the following require
 - **Level 4 (Complete)**: Implements all specifications including optional features
 
 **Compliance Testing**:
-- Self-assessment using the OGSP Compliance Test Suite
+- Self-assessment using the OGP Compliance Test Suite
 - Third-party validation for certification
 - Community review and feedback
 - Continuous compliance monitoring for long-term support
 
-The OGSP Compliance Test Suite is available at: https://github.com/opengrowingtrust/compliance-tests
+The OGP Compliance Test Suite is available at: https://github.com/opengrowingtrust/compliance-tests
 
 ### 4.3 Certification Process
 
-The OGSP Certification Process provides formal validation of compliance:
+The OGP Certification Process provides formal validation of compliance:
 
 **Certification Types**:
 1. **Self-Certification**: Implementers test their own systems and publish results
-2. **Community Certification**: Peer review by the OGSP community
+2. **Community Certification**: Peer review by the OGP community
 3. **Formal Certification**: Official certification by the Open Growing Alliance
 
 **Certification Process**:
-1. **Preparation**: Implement OGSP specifications and conduct self-testing
+1. **Preparation**: Implement OGP specifications and conduct self-testing
 2. **Documentation**: Prepare compliance documentation and test results
 3. **Submission**: Submit implementation for certification review
 4. **Validation**: Undergo testing and validation by certification authority
@@ -742,8 +749,8 @@ The OGSP Certification Process provides formal validation of compliance:
 
 **Certification Benefits**:
 - Official recognition of compliance
-- Listing in the OGSP Certified Products Directory
-- Use of the OGSP Certification Mark
+- Listing in the OGP Certified Products Directory
+- Use of the OGP Certification Mark
 - Increased user confidence and market visibility
 - Simplified integration with other certified products
 
@@ -754,17 +761,17 @@ The OGSP Certification Process provides formal validation of compliance:
 
 ### 4.4 Testing and Validation
 
-The OGSP provides a comprehensive testing and validation framework:
+The OGP provides a comprehensive testing and validation framework:
 
 **Testing Categories**:
 1. **Functional Testing**: Verifies that implementations meet functional requirements
 2. **Interoperability Testing**: Ensures compatibility between different implementations
 3. **Performance Testing**: Measures system performance under various conditions
 4. **Security Testing**: Validates security controls and identifies vulnerabilities
-5. **Compliance Testing**: Verifies adherence to OGSP specifications
+5. **Compliance Testing**: Verifies adherence to OGP specifications
 
 **Testing Tools**:
-- OGSP Test Suite: https://github.com/opengrowingtrust/test-suite
+- OGP Test Suite: https://github.com/opengrowingtrust/test-suite
 - Interoperability Test Harness: https://github.com/opengrowingtrust/interop-tester
 - Performance Benchmarking Tools: https://github.com/opengrowingtrust/perf-tools
 - Security Assessment Framework: https://github.com/opengrowingtrust/security-tester
@@ -794,7 +801,7 @@ Implementers are encouraged to:
 
 ### 5.1 Specification Maintenance
 
-The OGSP Core Specification is maintained through a structured governance process:
+The OGP Core Specification is maintained through a structured governance process:
 
 **Maintenance Responsibilities**:
 - **Core Working Group**: Responsible for the Core Specification
@@ -830,7 +837,7 @@ The OGSP Core Specification is maintained through a structured governance proces
 
 ### 5.2 Contribution Process
 
-The OGSP welcomes contributions from the community:
+The OGP welcomes contributions from the community:
 
 **Contribution Types**:
 1. **Bug Reports**: Identifying errors or inconsistencies
@@ -849,7 +856,7 @@ The OGSP welcomes contributions from the community:
 7. **Integration**: Incorporate approved changes into the specification
 
 **Contribution Guidelines**:
-- Follow the OGSP Contribution Guidelines
+- Follow the OGP Contribution Guidelines
 - Use the provided templates for different contribution types
 - Engage constructively with feedback and discussion
 - Respect the consensus-based decision process
@@ -863,7 +870,7 @@ The OGSP welcomes contributions from the community:
 
 ### 5.3 Versioning Policy
 
-The OGSP follows a structured versioning policy:
+The OGP follows a structured versioning policy:
 
 **Versioning Scheme**:
 - **MAJOR**: Incompatible changes that require implementation updates
@@ -892,7 +899,7 @@ The OGSP follows a structured versioning policy:
 
 ### 5.4 Deprecation Process
 
-The OGSP follows a structured deprecation process to ensure smooth transitions:
+The OGP follows a structured deprecation process to ensure smooth transitions:
 
 **Deprecation Stages**:
 1. **Announcement**: Feature is marked as deprecated but fully functional
@@ -927,7 +934,7 @@ The OGSP follows a structured deprecation process to ensure smooth transitions:
 
 **Capability**: A specific function or feature that a system or component can perform.
 
-**Controller**: The central component that orchestrates the operation of a growing system.
+**Controller**: The system component that orchestrates the operation of a growing system.
 
 **Growing Recipe**: A complete set of instructions for growing a specific plant from start to finish.
 
@@ -960,17 +967,4 @@ The OGSP follows a structured deprecation process to ensure smooth transitions:
 2. OpenAPI Specification 3.1, https://spec.openapis.org/oas/v3.1.0
 3. AsyncAPI Specification 2.0, https://www.asyncapi.com/docs/specifications/2.0.0
 4. Protocol Buffers, https://developers.google.com/protocol-buffers
-5. CBOR, RFC 8949, https://tools.ietf.org/html/rfc8949
-6. OAuth 2.0, RFC 6749, https://tools.ietf.org/html/rfc6749
-
-### 6.3 Change History
-
-**Version 2.0.0 (March 19, 2025)**:
-- Initial release of the Core Specification for OGSP 2.0
-- Restructured from monolithic specification to modular architecture
-- Added detailed system component definitions
-- Enhanced security model with defense-in-depth approach
-- Expanded AI integration requirements
-- Improved recipe representation with enhanced validation
-- Added comprehensive implementation guidelines
-- Established formal governance processes
+5. CBOR, RFC 8949, https://tools.ietf.org/html

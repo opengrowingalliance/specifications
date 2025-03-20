@@ -1,4 +1,4 @@
-# OGSP Root Specification
+# OGP Root Specification
 
 **Version:** 2.0.0  
 **Date:** March 19, 2025  
@@ -7,7 +7,7 @@
 
 ## Abstract
 
-This document serves as the root specification for the Open Growing System Protocol (OGSP), a standardized protocol for autonomous plant cultivation systems. It provides the overarching vision, motivation, and community-driven approach that unifies all modular specifications. OGSP enables interoperability between growing hardware, software, AI models, and recipe definitions, allowing for community-driven innovation while maintaining compatibility across implementations.
+This document serves as the root specification for the Open Growing Protocol (OGP), a standardized protocol for autonomous plant cultivation systems. It provides the overarching vision, motivation, and community-driven approach that unifies all modular specifications. OGP enables interoperability between growing hardware, software, AI models, and recipe definitions, allowing for community-driven innovation while maintaining compatibility across implementations.
 
 ## Status of This Document
 
@@ -17,7 +17,7 @@ This document is a draft of a proposed industry standard. Distribution of this d
 
 1. [Introduction](#1-introduction)
 2. [Motivation and Design Philosophy](#2-motivation-and-design-philosophy)
-3. [Community-Driven Approach](#3-community-driven-approach)
+3. [Community-Driven Approach](#3-community-Driven-Approach)
 4. [Ecosystem Vision](#4-ecosystem-vision)
 5. [Specification Architecture](#5-specification-architecture)
 6. [Future Roadmap](#6-future-roadmap)
@@ -29,11 +29,11 @@ This document is a draft of a proposed industry standard. Distribution of this d
 
 ### 1.1 Purpose of This Document
 
-This root specification serves as the foundational document that ties together all OGSP specifications. While the modular specifications provide detailed technical requirements for specific domains, this document establishes the overarching vision, principles, and architecture that unify the protocol. It explains the relationships between specifications and provides context for understanding the OGSP ecosystem as a whole.
+This root specification serves as the foundational document that ties together all OGP specifications. While the modular specifications provide detailed technical requirements for specific domains, this document establishes the overarching vision, principles, and architecture that unify the protocol. It explains the relationships between specifications and provides context for understanding the OGP ecosystem as a whole.
 
-### 1.2 OGSP Vision
+### 1.2 OGP Vision
 
-The Open Growing System Protocol envisions a solarpunk future where advanced plant cultivation technology is accessible to everyone, from small-scale farmers to community growers, hobbyists, and researchers. By creating open standards for growing systems, OGSP aims to:
+The Open Growing Protocol envisions a solarpunk future where advanced plant cultivation technology is accessible to everyone, from small-scale farmers to community growers, hobbyists, and researchers. By creating open standards for growing systems, OGP aims to:
 
 - **Democratize Access**: Make advanced growing techniques available to growers of all skill levels and resource capabilities, particularly those historically excluded from technological advancement
 - **Enable Innovation**: Create a foundation for community-driven innovation in plant cultivation that serves ecological and social justice
@@ -43,13 +43,13 @@ The Open Growing System Protocol envisions a solarpunk future where advanced pla
 - **Promote Economic Justice**: Empower small farmers with technology that helps them compete with large-scale industrial agriculture
 - **Support Sustainable Agriculture**: Prioritize ecological sustainability in all aspects of the protocol's development and implementation
 
-OGSP represents a fundamental shift from closed, proprietary growing systems to an open ecosystem where components can be mixed and matched, recipes can be shared and improved, and innovation can flourish through community collaboration. This shift is not merely technical but socioeconomic, aiming to redistribute power in agricultural systems and create more equitable and sustainable food and plant cultivation systems.
+OGP represents a fundamental shift from closed, proprietary growing systems to an open ecosystem where components can be mixed and matched, recipes can be shared and improved, and innovation can flourish through community collaboration. This shift is not merely technical but socioeconomic, aiming to redistribute power in agricultural systems and create more equitable and sustainable food and plant cultivation systems.
 
 ### 1.3 History and Evolution
 
-The OGSP began as a response to the fragmentation in the growing system market, where proprietary technologies created barriers to innovation and knowledge sharing. The initial v1.0 specification established the core concepts and requirements, while v1.1 expanded on these with more detailed implementation guidance.
+The OGP began as a response to the fragmentation in the growing system market, where proprietary technologies created barriers to innovation and knowledge sharing. The initial v1.0 specification established the core concepts and requirements, while v1.1 expanded on these with more detailed implementation guidance.
 
-Version 2.0 represents a significant evolution in the OGSP approach, adopting a modular specification structure that allows for more focused development in specific domains while maintaining overall coherence. This modularization enables:
+Version 2.0 represents a significant evolution in the OGP approach, adopting a modular specification structure that allows for more focused development in specific domains while maintaining overall coherence. This modularization enables:
 
 - More rapid evolution of individual components
 - Clearer separation of concerns
@@ -57,7 +57,7 @@ Version 2.0 represents a significant evolution in the OGSP approach, adopting a 
 - More targeted contribution from domain experts
 - Better adaptability to emerging technologies
 
-The transition to a modular approach reflects the maturing of the OGSP ecosystem and the growing diversity of its applications and implementations.
+The transition to a modular approach reflects the maturing of the OGP ecosystem and the growing diversity of its applications and implementations.
 
 ## 2. Motivation and Design Philosophy
 
@@ -75,7 +75,7 @@ These limitations slow innovation, increase costs, and prevent the democratizati
 
 ### 2.2 Design Goals
 
-The OGSP aims to address these challenges through the following design goals:
+The OGP aims to address these challenges through the following design goals:
 
 1. **Enable Recipe Portability**: Allow growing recipes to be shared and used across compatible hardware systems
 2. **Create an Interoperable Ecosystem**: Foster development of interoperable sensors, actuators, controllers, and AI models
@@ -88,7 +88,7 @@ The OGSP aims to address these challenges through the following design goals:
 
 ### 2.3 Guiding Principles
 
-The development and implementation of OGSP is guided by these core principles:
+The development and implementation of OGP is guided by these core principles:
 
 - **Openness and Transparency**: All specifications are openly available, and development processes are transparent
 - **Simplicity and Usability**: Specifications prioritize ease of understanding and implementation
@@ -104,11 +104,11 @@ The development and implementation of OGSP is guided by these core principles:
 
 ### 2.4 Solarpunk Philosophy and Agricultural Justice
 
-OGSP embraces a solarpunk vision of the future—one where technology serves ecological sustainability, social justice, and community empowerment. This philosophical foundation shapes our approach in several key ways:
+OGP embraces a solarpunk vision of the future—one where technology serves ecological sustainability, social justice, and community empowerment. This philosophical foundation shapes our approach in several key ways:
 
 #### 2.4.1 Technology for Agricultural Justice
 
-Current agricultural systems often concentrate power and resources in the hands of large agribusinesses, while small farmers struggle to compete despite often employing more sustainable practices. OGSP aims to rebalance this power dynamic by:
+Current agricultural systems often concentrate power and resources in the hands of large agribusinesses, while small farmers struggle to compete despite often employing more sustainable practices. OGP aims to rebalance this power dynamic by:
 
 - Providing small farmers with technological tools that were previously only available to large operations
 - Enabling resource-efficient growing that maximizes output while minimizing environmental impact
@@ -117,7 +117,7 @@ Current agricultural systems often concentrate power and resources in the hands 
 
 #### 2.4.2 Community Empowerment Through Open Technology
 
-Specialized growing communities, such as cannabis cultivators, have developed sophisticated knowledge outside traditional agricultural institutions. OGSP recognizes the value of this knowledge and aims to:
+Specialized growing communities, such as cannabis cultivators, have developed sophisticated knowledge outside traditional agricultural institutions. OGP recognizes the value of this knowledge and aims to:
 
 - Provide platforms for documenting and sharing community-developed growing techniques
 - Enable standardization without centralization, allowing diverse approaches to thrive
@@ -126,7 +126,7 @@ Specialized growing communities, such as cannabis cultivators, have developed so
 
 #### 2.4.3 Ecological Integration
 
-True sustainability requires growing systems that work with rather than against natural processes. OGSP promotes:
+True sustainability requires growing systems that work with rather than against natural processes. OGP promotes:
 
 - Energy-efficient growing techniques that minimize resource consumption
 - Integration with renewable energy systems
@@ -135,7 +135,7 @@ True sustainability requires growing systems that work with rather than against 
 
 #### 2.4.4 Decentralization and Resilience
 
-Centralized agricultural systems are vulnerable to disruption and control. OGSP supports:
+Centralized agricultural systems are vulnerable to disruption and control. OGP supports:
 
 - Distributed growing systems that enhance food sovereignty and community resilience
 - Local adaptation of growing techniques to specific environmental conditions
@@ -146,7 +146,7 @@ Centralized agricultural systems are vulnerable to disruption and control. OGSP 
 
 ### 3.1 Community Governance Model
 
-OGSP is governed by a community-driven model that balances openness with structured decision-making:
+OGP is governed by a community-driven model that balances openness with structured decision-making:
 
 - **Core Working Group**: Responsible for overall protocol direction and cross-domain coordination
 - **Domain Working Groups**: Focus on specific technical domains (hardware, recipes, AI, etc.)
@@ -163,7 +163,7 @@ All governance processes operate with maximum transparency, with discussions, de
 
 ### 3.2 Contribution Framework
 
-OGSP welcomes contributions from individuals and organizations across the ecosystem:
+OGP welcomes contributions from individuals and organizations across the ecosystem:
 
 - **Code Contributions**: Reference implementations, testing tools, and utilities
 - **Documentation**: Specifications, guides, tutorials, and translations
@@ -175,19 +175,19 @@ The contribution process is designed to be accessible to newcomers while maintai
 
 ### 3.3 Knowledge Sharing
 
-A core goal of OGSP is to enable knowledge sharing among growers and researchers:
+A core goal of OGP is to enable knowledge sharing among growers and researchers:
 
 - **Recipe Repositories**: Community repositories for sharing and discovering growing recipes
 - **Methodology Documentation**: Standardized formats for documenting growing methodologies
 - **Data Collection and Analysis**: Frameworks for collecting, analyzing, and sharing growing data
-- **Educational Resources**: Tutorials, guides, and courses on OGSP implementation and use
+- **Educational Resources**: Tutorials, guides, and courses on OGP implementation and use
 - **Research Integration**: Mechanisms for integrating academic and commercial research
 
 These knowledge sharing mechanisms are designed to accelerate innovation and improvement in growing methodologies, making advanced techniques accessible to all.
 
 ### 3.4 Democratization Strategy
 
-OGSP is committed to democratizing access to advanced growing technology through:
+OGP is committed to democratizing access to advanced growing technology through:
 
 - **Accessibility Considerations**: Ensuring specifications can be implemented at various resource levels, with particular attention to the needs of small farmers and community growers
 - **Tiered Implementation Levels**: Defining implementation levels from basic to advanced, with valuable functionality available even at the most basic level
@@ -197,30 +197,30 @@ OGSP is committed to democratizing access to advanced growing technology through
 - **Appropriate Technology Approaches**: Adaptations for diverse environmental and resource contexts, ensuring solutions are appropriate to local conditions
 - **Low-Cost Reference Implementations**: Developing and documenting implementations that can be built with minimal investment
 - **Community Support Networks**: Facilitating peer-to-peer support systems where experienced users can help newcomers
-- **Technology Transfer Programs**: Structured programs to bring OGSP technology to small farming communities
+- **Technology Transfer Programs**: Structured programs to bring OGP technology to small farming communities
 - **Participatory Design**: Including small farmers and community growers in the design process to ensure solutions meet their actual needs
 
-The democratization strategy ensures that OGSP benefits are accessible to diverse communities worldwide, not just well-resourced commercial operations. It recognizes that technical accessibility must be paired with economic accessibility and community support to achieve true democratization.
+The democratization strategy ensures that OGP benefits are accessible to diverse communities worldwide, not just well-resourced commercial operations. It recognizes that technical accessibility must be paired with economic accessibility and community support to achieve true democratization.
 
 ## 4. Ecosystem Vision
 
 ### 4.1 Stakeholder Ecosystem
 
-OGSP envisions a vibrant ecosystem with diverse stakeholders:
+OGP envisions a vibrant ecosystem with diverse stakeholders:
 
 - **Hardware Manufacturers**: Creating compatible sensors, actuators, and integrated systems
 - **Software Developers**: Building control systems, user interfaces, and data analysis tools
 - **AI Researchers**: Developing models for plant monitoring, diagnosis, and optimization
-- **Growers and Farmers**: Using OGSP systems for commercial and personal cultivation
+- **Growers and Farmers**: Using OGP systems for commercial and personal cultivation
 - **Research Institutions**: Advancing plant science and cultivation techniques
 - **Educators**: Teaching cultivation techniques and system development
 - **Community Organizations**: Implementing growing projects for food security and sustainability
 
-Each stakeholder group both contributes to and benefits from the OGSP ecosystem, creating a virtuous cycle of improvement and innovation.
+Each stakeholder group both contributes to and benefits from the OGP ecosystem, creating a virtuous cycle of improvement and innovation.
 
 ### 4.2 Use Cases
 
-OGSP supports a wide range of use cases across different contexts:
+OGP supports a wide range of use cases across different contexts:
 
 - **Small-Scale Sustainable Farming**: Enabling small farmers to optimize yields while minimizing resource use, helping them compete with large agribusiness through precision growing techniques
 - **Community-Based Agriculture**: Supporting farmer cooperatives and community-supported agriculture with shared technology resources and knowledge
@@ -241,7 +241,7 @@ These diverse use cases inform the protocol's requirements and ensure its broad 
 
 ### 4.3 Success Metrics
 
-The OGSP measures success through several key indicators:
+The OGP measures success through several key indicators:
 
 - **Adoption Metrics**: Number of compatible implementations and users
 - **Interoperability Achievements**: Demonstrated compatibility between diverse components
@@ -256,7 +256,7 @@ Regular assessment of these metrics guides the protocol's evolution and ensures 
 
 ### 5.1 Modular Approach
 
-OGSP 2.0 adopts a modular specification architecture consisting of:
+OGP 2.0 adopts a modular specification architecture consisting of:
 
 - **Root Specification** (this document): Provides overarching vision and context
 - **Core Specification**: Defines fundamental architecture and technical principles
@@ -272,7 +272,7 @@ This modular approach offers several benefits:
 
 ### 5.2 Specification Map
 
-The OGSP 2.0 specification suite includes the following documents:
+The OGP 2.0 specification suite includes the following documents:
 
 ```mermaid
 graph TD
@@ -304,7 +304,7 @@ Each specification has clear dependencies and relationships with others, creatin
 
 ### 5.3 Implementation Pathways
 
-OGSP supports multiple implementation pathways to accommodate diverse needs:
+OGP supports multiple implementation pathways to accommodate diverse needs:
 
 - **Minimum Viable Implementation**: Basic functionality with minimal resources
 - **Progressive Capability Levels**: Four defined levels from basic to advanced
@@ -315,13 +315,13 @@ OGSP supports multiple implementation pathways to accommodate diverse needs:
 - **Domain-Specific Implementation**: Focus on specific capabilities (e.g., recipe creation without hardware)
 - **Reference Implementation**: Complete implementation of all specifications
 
-These pathways ensure that OGSP is accessible to implementers with varying resources and objectives.
+These pathways ensure that OGP is accessible to implementers with varying resources and objectives.
 
 ## 6. Future Roadmap
 
 ### 6.1 Short-term Objectives
 
-The immediate priorities for OGSP development include:
+The immediate priorities for OGP development include:
 
 - **Specification Finalization**: Completing and refining all v2.0 specifications
 - **Reference Implementation**: Developing a complete reference implementation
@@ -329,11 +329,11 @@ The immediate priorities for OGSP development include:
 - **Documentation Expansion**: Developing detailed implementation guides
 - **Community Building**: Expanding the contributor and user community
 
-These objectives focus on establishing a solid foundation for the OGSP ecosystem.
+These objectives focus on establishing a solid foundation for the OGP ecosystem.
 
 ### 6.2 Long-term Vision
 
-The long-term vision for OGSP includes:
+The long-term vision for OGP includes:
 
 - **Advanced AI Integration**: Deeper integration of artificial intelligence for autonomous growing
 - **Expanded Sensor Capabilities**: Support for novel sensing technologies
@@ -346,7 +346,7 @@ This vision guides ongoing development and ensures the protocol remains relevant
 
 ### 6.3 Sustainability Plan
 
-To ensure long-term viability, OGSP has established:
+To ensure long-term viability, OGP has established:
 
 - **Governance Sustainability**: Structures for maintaining governance over time
 - **Funding Models**: Approaches for sustaining development and maintenance
@@ -355,13 +355,13 @@ To ensure long-term viability, OGSP has established:
 - **Academic Partnerships**: Collaborations with research institutions
 - **Succession Planning**: Processes for knowledge transfer and leadership transition
 
-These mechanisms ensure that OGSP can continue to evolve and serve its community for the long term.
+These mechanisms ensure that OGP can continue to evolve and serve its community for the long term.
 
 ## 7. Getting Started
 
 ### 7.1 For Implementers
 
-Those looking to implement OGSP can start with:
+Those looking to implement OGP can start with:
 
 - **Quick Start Guide**: https://github.com/opengrowingalliance
 - **Reference Implementation**: https://github.com/opengrowingalliance/reference
@@ -379,7 +379,7 @@ The implementation process typically follows these steps:
 
 ### 7.2 For Contributors
 
-Those wishing to contribute to OGSP can:
+Those wishing to contribute to OGP can:
 
 - **Join the Community**: https://github.com/orgs/opengrowingalliance/discussions
 - **Find Contribution Opportunities**: https://opengrowingalliance.solar/contribute
@@ -391,7 +391,7 @@ New contributors are encouraged to start with documentation, testing, or small e
 
 ### 7.3 For Users
 
-End users of OGSP-compatible systems can:
+End users of OGP-compatible systems can:
 
 - **Find Compatible Systems**: https://opengrowingalliance.solar/compatible
 - **Access Recipe Repositories**: https://opengrowingalliance.solar/recipes
@@ -399,7 +399,7 @@ End users of OGSP-compatible systems can:
 - **Report Issues**: https://github.com/opengrowingalliance
 - **Request Features**: https://github.com/orgs/opengrowingalliance/discussions
 
-Users are a vital part of the OGSP ecosystem, providing feedback, sharing experiences, and helping to drive the protocol's evolution.
+Users are a vital part of the OGP ecosystem, providing feedback, sharing experiences, and helping to drive the protocol's evolution.
 
 ## 8. References
 
@@ -434,15 +434,15 @@ Users are a vital part of the OGSP ecosystem, providing feedback, sharing experi
 - **Parameter**: A specific environmental condition (temperature, humidity, etc.)
 - **Automation Rule**: A condition-action pair that triggers automated responses
 - **Confidence Score**: A value indicating AI model certainty about a detection or recommendation
-- **Growing System**: The complete collection of hardware and software running the OGSP
+- **Growing System**: The complete collection of hardware and software running the OGP
 
 ### 9.2 Version History
 
-- **2.0.0** (March 19, 2025): Initial release of the root specification for OGSP 2.0
+- **2.0.0** (March 19, 2025): Initial release of the root specification for OGP 2.0
 
 ### 9.3 Contributors
 
-The OGSP is the result of contributions from many individuals and organizations. Key contributors include:
+The OGP is the result of contributions from many individuals and organizations. Key contributors include:
 
 - Open Growing Alliance
 - Community Working Group Members
@@ -452,4 +452,4 @@ The OGSP is the result of contributions from many individuals and organizations.
 - Industry Implementation Partners
 - Open Source Community Contributors
 
-The OGSP acknowledges and thanks all those who have contributed to its development and evolution.
+The OGP acknowledges and thanks all those who have contributed to its development and evolution.
