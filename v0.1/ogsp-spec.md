@@ -1,6 +1,6 @@
 # RFC: Open Growing System Protocol (OGSP) Standard
 
-**Version:** 1.0.0-draft  
+**Version:** 0.1.0-draft
 **Date:** March 16, 2025  
 **Status:** Proposed Standard  
 **Authors:** Open Growing Alliance  

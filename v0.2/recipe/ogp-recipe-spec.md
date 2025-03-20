@@ -1,6 +1,6 @@
 # OGP Recipe Representation Specification (v2.2)
 
-*This document is part of the OGP 2.0 specification suite. For the overarching vision, motivation, and community-driven approach, please refer to the [Root Specification](../ogp-root-spec.md).*
+*This document is part of the OGP 0.2 specification suite. For the overarching vision, motivation, and community-driven approach, please refer to the [Root Specification](../ogp-root-spec.md).*
 
 ## Introduction
 This document specifies the format and structure for representing growing recipes within the OGP protocol. It aims to provide a standardized approach for defining, sharing, and executing recipes across diverse hardware and software environments.
@@ -8,8 +8,7 @@ This document specifies the format and structure for representing growing recipe
 The OGP Recipe Specification has been enhanced to emphasize a declarative approach to recipe definition, focusing on plant needs rather than implementation details. This revision strengthens the separation between "what" a plant needs and "how" a system implements those needs, making recipes more portable and adaptable across different growing systems.
 
 ## Versioning
-- Current Version: 2.2.0
-- Previous Version: 2.1.0
+- Current Version: 0.2.0
 
 ## References
 - [Root Specification](../ogp-root-spec.md)

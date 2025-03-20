@@ -1,8 +1,8 @@
-# OGP Core Specification (v2.0)
+# OGP Core Specification (v0.2)
 
 *This document is part of the OGP 2.0 specification suite. For the overarching vision, motivation, and community-driven approach, please refer to the [Root Specification](../ogp-root-spec.md).*
 
-**Version:** 2.0.0  
+**Version:** 0.2.0 
 **Date:** March 19, 2025  
 **Status:** Proposed Standard  
 **Authors:** Open Growing Alliance  
